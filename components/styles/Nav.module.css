@@ -11,8 +11,9 @@
   display: flex;
   justify-content: space-between;
   margin: auto;
-  max-width: 980px;
   padding: 20px 2rem;
+  width: 100%;
+  max-width: 80vw;
 }
 .navcontainer__logo {
   width: 100%;
