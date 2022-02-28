@@ -10,11 +10,44 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: fadein 2s;
 }
 
+.intro {
+  max-width: 980px;
+  padding: 0 30px;
+}
+
+.intro__h1 {
+  font-size: 5.5em;
+  font-weight: 300;
+  margin: 0;
+}
+.intro__h3 {
+  font-size: 1.4em;
+  font-weight: 500;
+  margin: 0;
+}
+
+.intro__line__through {
+  text-decoration: line-through;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+  .intro__h1 {
+    font-size: 4.5em;
+  }
+}
+@media (max-width: 320px) {
+  .intro__h1 {
+    font-size: 3.5em;
   }
 }
