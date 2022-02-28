@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import s from "./styles/Nav.module.css";
+import logo from "/public/1.png";
 import twitter from "../public/twitter.svg";
 import github from "../public/github.svg";
 import instagram from "../public/instagram.svg";
@@ -11,7 +12,7 @@ function Nav() {
     <header className={s.header}>
       <div className={s.navcontainer}>
         <div className={s.navcontainer__logo}>
-          <Image src="/../public/1.png" width={35} height={45} alt="Logo" />
+          <Image src={logo} width={35} height={45} alt="Logo" />
         </div>
         <div className={s.navcontainer__social}>
           <Link href="https://twitter.com/KevinCollazos_">
