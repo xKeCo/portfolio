@@ -17,7 +17,7 @@ const Home: NextPage = () => {
 
           <section className={s.intro}>
             <h1 className={s.intro__h1}>
-              Hi, I'm {""}
+              Hi, I&apos;m {""}
               <span className={s.intro__line__through}>
                 <b>Kevin Collazos,</b>
               </span>{" "}
@@ -25,7 +25,7 @@ const Home: NextPage = () => {
               <b> xKeCo.</b>
             </h1>
             <h3 className={s.intro__h3}>
-              I'm a <b>Frontend Developer</b>
+              I&apos;m a <b>Frontend Developer</b>
             </h3>
           </section>
         </main>
