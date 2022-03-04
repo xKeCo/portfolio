@@ -1,7 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+
+// Styles
 import s from "./styles/Nav.module.css";
+
+// Images and Svgs
 import logo from "/public/1.png";
 import twitter from "../public/twitter.svg";
 import github from "../public/github.svg";

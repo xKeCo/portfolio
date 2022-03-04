@@ -1,51 +1,76 @@
 import Image from "next/image";
-import Proyecto1 from "/public/Proyecto1.png";
+
+// Button arrow image
 import arrow from "/public/arrow.png";
+
+// Styles
 import s from "./styles/ProjectsCard.module.css";
 
 type ProjectsCardProps = {
-  link: string;
+  linkPage?: string;
+  linkGithub?: string;
   title: string;
   description: string;
-  ubi: string;
+  adi?: string;
   image: StaticImageData;
   alt: string;
 };
 
 function ProjectsCard({
-  link,
+  linkPage,
+  linkGithub,
   title,
   description,
-  ubi,
+  adi,
   image,
   alt,
 }: ProjectsCardProps) {
   return (
-    <a href={link} target="_blank" rel="noopener noreferrer">
-      <div className={s.projectsSection__container}>
-        <div className={s.projectsSection__container__details}>
-          <h2 className={s.projectsSection__container__details__h2}>{title}</h2>
-          <p className={s.projectsSection__container__details__p}>
-            {description}
-          </p>
-          <p className={s.projectsSection__container__details__p}>{ubi}</p>
-          <div className={s.projectsSection__container__details__button}>
-            <div className={s.projectsSection__container__details__button_text}>
-              Link to the website
+    // <a href={linkPage} target="_blank" rel="noopener noreferrer">
+    <div className={s.projectsSection__container}>
+      <div className={s.projectsSection__container__details}>
+        <h2 className={s.projectsSection__container__details__h2}>{title}</h2>
+        <p className={s.projectsSection__container__details__p}>
+          {description}
+        </p>
+        <p className={s.projectsSection__container__details__p__adi}>{adi}</p>
+
+        {linkPage && (
+          <a href={linkPage} target="_blank" rel="noopener noreferrer">
+            <div className={s.projectsSection__container__details__button}>
+              <div
+                className={s.projectsSection__container__details__button_text}
+              >
+                Link to the Website
+              </div>
+              <Image src={arrow} width={20} height={20} alt="Arrow" />
             </div>
-            <Image src={arrow} width={20} height={20} alt="Arrow" />
-          </div>
-        </div>
-        <div className={s.projectsSection__container__image}>
-          <Image
-            src={image}
-            alt={alt}
-            width={image.width}
-            height={image.height}
-          />
-        </div>
+          </a>
+        )}
+
+        {linkGithub && (
+          <a href={linkGithub} target="_blank" rel="noopener noreferrer">
+            <div className={s.projectsSection__container__details__button}>
+              <div
+                className={s.projectsSection__container__details__button_text}
+              >
+                Link to the Github
+              </div>
+              <Image src={arrow} width={20} height={20} alt="Arrow" />
+            </div>
+          </a>
+        )}
       </div>
-    </a>
+      <div className={s.projectsSection__container__image}>
+        <Image
+          src={image}
+          alt={alt}
+          width={image.width}
+          height={image.height}
+        />
+      </div>
+    </div>
+    // </a>
   );
 }
 
