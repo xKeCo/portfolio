@@ -23,8 +23,9 @@ const Home: NextPage = () => {
             <h3 className={s.intro__h3}>
               I&apos;m a <b>Frontend Developer</b>
             </h3>
+            <p>Page under construction. Check back soon! 😁</p>
           </section>
-          <section className={s.projectsSection} id="projects">
+          {/* <section className={s.projectsSection} id="projects">
             <ProjectsCard
               link="https://www.borealclinicadental.com"
               title="Boreal Dental Clinic"
@@ -37,7 +38,7 @@ const Home: NextPage = () => {
               }}
               alt="Proyecto1"
             />
-          </section>
+          </section> */}
         </main>
       </div>
     </>
