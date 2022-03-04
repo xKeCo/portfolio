@@ -1,5 +1,6 @@
 .header {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgb(246, 246, 246, 0.5);
+
   backdrop-filter: blur(8px);
   max-width: 100%;
   position: sticky;
@@ -22,6 +23,7 @@
 .navcontainer__social__links {
   margin-right: 10px;
   border-bottom: 1px solid transparent;
+  -webkit-transition: border 200ms ease-out;
   transition: border 0.2s ease;
 }
 .navcontainer__social__links:last-child {

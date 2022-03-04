@@ -1,9 +1,8 @@
 import Nav from "components/Nav";
+import ProjectsCard from "components/ProjectsCard";
 import SEO from "components/SEO";
 import type { NextPage } from "next";
-import Image from "next/image";
 import s from "../styles/Home.module.css";
-import construction from "/public/construction.png";
 
 const Home: NextPage = () => {
   return (
@@ -12,9 +11,6 @@ const Home: NextPage = () => {
       <Nav />
       <div className={s.container}>
         <main className={s.main}>
-          {/* <Image src={construction} width={500} height={500} />
-          <h1>Page under construction. Coming soon...</h1> */}
-
           <section className={s.intro}>
             <h1 className={s.intro__h1}>
               Hi, I&apos;m {""}
@@ -27,6 +23,20 @@ const Home: NextPage = () => {
             <h3 className={s.intro__h3}>
               I&apos;m a <b>Frontend Developer</b>
             </h3>
+          </section>
+          <section className={s.projectsSection} id="projects">
+            <ProjectsCard
+              link="https://www.borealclinicadental.com"
+              title="Boreal Dental Clinic"
+              description="Official website for Boreal Dental Clinic."
+              ubi="Cali, Colombia. 🇨🇴"
+              image={{
+                src: "/Proyecto1.png",
+                width: 640,
+                height: 540,
+              }}
+              alt="Proyecto1"
+            />
           </section>
         </main>
       </div>

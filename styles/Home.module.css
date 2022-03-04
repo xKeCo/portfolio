@@ -1,19 +1,16 @@
 .main {
-  min-height: 80vh;
-  padding: 4rem 0;
-  flex: 1;
   margin: auto;
   max-width: 1200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  animation: fadein 2s;
 }
 
 .intro {
+  height: 80vh;
   max-width: 1200px;
-  padding: 0 30px;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  animation: fadein 2s;
 }
 
 .intro__h1 {
@@ -31,6 +28,11 @@
   text-decoration: line-through;
 }
 
+.projectsSection {
+  /* margin: 150px 0; */
+  padding: 0 2rem;
+}
+
 @keyframes fadein {
   from {
     opacity: 0;
@@ -39,11 +41,18 @@
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 674px) {
+  .projectsSection {
+    padding: 0;
+  }
+}
 @media (max-width: 600px) {
   .intro__h1 {
     font-size: 4.5em;
   }
 }
+
 @media (max-width: 370px) {
   .intro__h1 {
     font-size: 3.5em;
