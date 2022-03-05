@@ -14,7 +14,7 @@ function Nav() {
   return (
     <header className={s.header}>
       <div className={s.navcontainer}>
-        <Link href="/">
+        <Link href="/" passHref>
           <div className={s.navcontainer__logo}>
             <Image src={logo} width={35} height={45} alt="Logo" />
           </div>
@@ -37,7 +37,7 @@ function Nav() {
           </Link>
         </div>
         <div className={s.navcontainer__projects__link}>
-          <Link href="/#projects">
+          <Link href="/#projects" passHref>
             <p>Projects</p>
           </Link>
         </div>

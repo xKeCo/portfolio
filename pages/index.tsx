@@ -19,7 +19,7 @@ const Home: NextPage = () => {
       <div className={s.container}>
         <main className={s.main}>
           <section className={s.intro}>
-            <Link href="/about">
+            <Link href="/about" passHref>
               <h1 className={s.intro__h1}>
                 Hi, I&apos;m {""}
                 <span className={s.intro__line__through}>Kevin Collazos</span>,
