@@ -4,39 +4,43 @@ import Image from "next/image";
 // Local Components
 import Nav from "components/Nav";
 import ProjectsCard from "components/ProjectsCard";
-import SEO from "components/SEO";
 
 // Button Arrow Image
 import more from "/public/more.png";
 
 // Styles
 import s from "../styles/Home.module.css";
+import Link from "next/link";
 
 const Home: NextPage = () => {
   return (
     <>
-      <SEO />
       <Nav />
       <div className={s.container}>
         <main className={s.main}>
           <section className={s.intro}>
+            <Link href="/about">
+              <h1 className={s.intro__h1}>
+                Hi, I&apos;m {""}
+                <span className={s.intro__line__through}>Kevin Collazos</span>,
+              </h1>
+            </Link>
             <h1 className={s.intro__h1}>
-              Hi, I&apos;m {""}
-              <span className={s.intro__line__through}>Kevin Collazos</span>,
-              a.k.a
+              a.k.a{" "}
               <a
                 href="https://www.github.com/xKeCo"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <b> xKeCo.</b>
+                <b>xKeCo</b>.
               </a>
             </h1>
             <h3 className={s.intro__h3}>
               I&apos;m a <b>Frontend Developer</b>
             </h3>
           </section>
-          <section className={s.projectsSection} id="projects">
+          <div id="projects" />
+          <section className={s.projectsSection}>
             <ProjectsCard
               linkPage="https://www.borealclinicadental.com"
               title="Boreal Dental Clinic"

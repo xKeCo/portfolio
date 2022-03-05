@@ -26,7 +26,6 @@ function ProjectsCard({
   alt,
 }: ProjectsCardProps) {
   return (
-    // <a href={linkPage} target="_blank" rel="noopener noreferrer">
     <div className={s.projectsSection__container}>
       <div className={s.projectsSection__container__details}>
         <h2 className={s.projectsSection__container__details__h2}>{title}</h2>
@@ -43,7 +42,7 @@ function ProjectsCard({
               >
                 Link to the Website
               </div>
-              <Image src={arrow} width={20} height={20} alt="Arrow" />
+              <Image src={arrow} width={20} height={20} alt="Arrow" priority />
             </div>
           </a>
         )}
@@ -56,7 +55,7 @@ function ProjectsCard({
               >
                 Link to the Github
               </div>
-              <Image src={arrow} width={20} height={20} alt="Arrow" />
+              <Image src={arrow} width={20} height={20} alt="Arrow" priority />
             </div>
           </a>
         )}
@@ -67,10 +66,10 @@ function ProjectsCard({
           alt={alt}
           width={image.width}
           height={image.height}
+          priority
         />
       </div>
     </div>
-    // </a>
   );
 }
 

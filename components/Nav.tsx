@@ -14,9 +14,11 @@ function Nav() {
   return (
     <header className={s.header}>
       <div className={s.navcontainer}>
-        <div className={s.navcontainer__logo}>
-          <Image src={logo} width={35} height={45} alt="Logo" />
-        </div>
+        <Link href="/">
+          <div className={s.navcontainer__logo}>
+            <Image src={logo} width={35} height={45} alt="Logo" />
+          </div>
+        </Link>
         <div className={s.navcontainer__social}>
           <Link href="https://twitter.com/KevinCollazos_">
             <a className={s.navcontainer__social__links} target="_blank">
@@ -35,9 +37,9 @@ function Nav() {
           </Link>
         </div>
         <div className={s.navcontainer__projects__link}>
-          {/* <Link href="/projects"> */}
-          <p>Projects</p>
-          {/* </Link> */}
+          <Link href="/#projects">
+            <p>Projects</p>
+          </Link>
         </div>
       </div>
     </header>

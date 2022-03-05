@@ -5,7 +5,9 @@ function SEO() {
     <Head>
       <title>Kevin Collazos</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <link rel="shortcut icon" href="/5.png" />
+      <link rel="shortcut icon" href="/icon.png" />
+      <meta name="robots" content="noindex" />
+      <meta name="AdsBot-Google" content="noindex" />
       <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=yes"
