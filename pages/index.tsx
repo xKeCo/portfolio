@@ -35,9 +35,16 @@ const Home: NextPage = () => {
                 <b>xKeCo</b>.
               </a>
             </h1>
-            <h3 className={s.intro__h3}>
+            <h2 className={s.intro__h3}>
               I&apos;m a <b>Frontend Developer</b>
-            </h3>
+            </h2>
+            <a
+              href="https://drive.google.com/u/0/uc?id=1RM6pUAdYK_JnnjToKWvM_weWYhZbr9XO&export=download"
+              download="Resume"
+              className={s.intro__button__resume}
+            >
+              Download CV
+            </a>
           </section>
           <div id="projects" />
           <section className={s.projectsSection}>

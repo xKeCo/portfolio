@@ -9,6 +9,7 @@ import logo from "/public/1.png";
 import twitter from "../public/twitter.svg";
 import github from "../public/github.svg";
 import instagram from "../public/instagram.svg";
+import linkedin from "../public/linkedin.svg";
 
 function Nav() {
   return (
@@ -33,6 +34,11 @@ function Nav() {
           <Link href="https://instagram.com/collazos._">
             <a className={s.navcontainer__social__links} target="_blank">
               <Image src={instagram} width={30} height={30} alt="Instagram" />
+            </a>
+          </Link>
+          <Link href="https://www.linkedin.com/in/kevcollazos/">
+            <a className={s.navcontainer__social__links} target="_blank">
+              <Image src={linkedin} width={30} height={30} alt="Instagram" />
             </a>
           </Link>
         </div>
