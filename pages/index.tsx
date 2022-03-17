@@ -41,6 +41,7 @@ const Home: NextPage = () => {
             <a
               href="https://drive.google.com/u/0/uc?id=1RM6pUAdYK_JnnjToKWvM_weWYhZbr9XO&export=download"
               download="Resume"
+              target="_blank"
               className={s.intro__button__resume}
             >
               Download CV

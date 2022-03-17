@@ -23,8 +23,8 @@
 .navcontainer__social__links {
   margin-right: 10px;
   border-bottom: 1px solid transparent;
-  -webkit-transition: all 200ms ease-out;
-  transition: all 0.2s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .navcontainer__social__links:last-child {
   margin-right: 0;
@@ -38,6 +38,16 @@
   font-size: 1.1rem;
   font-weight: 600;
   margin: 0;
+  transition: all 0.3s ease;
+}
+
+.navcontainer__projects__link p {
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+.navcontainer__projects__link p:hover {
+  cursor: pointer;
+  border-bottom: 1px solid #000;
 }
 
 @media screen and (max-width: 600px) {
