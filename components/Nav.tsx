@@ -31,7 +31,7 @@ function Nav() {
               <Image src={github} width={30} height={30} alt="Github" />
             </a>
           </Link>
-          <Link href="https://instagram.com/collazos._">
+          <Link href="https://instagram.com/kcollazos_">
             <a className={s.navcontainer__social__links} target="_blank">
               <Image src={instagram} width={30} height={30} alt="Instagram" />
             </a>
