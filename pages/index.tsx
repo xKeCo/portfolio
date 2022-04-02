@@ -42,7 +42,7 @@ const Home: NextPage = () => {
               href="https://drive.google.com/u/0/uc?id=1RM6pUAdYK_JnnjToKWvM_weWYhZbr9XO&export=download"
               download="Resume"
               target="_blank"
-	      rel="noopener noreferrer"
+              rel="noopener noreferrer"
               className={s.intro__button__resume}
             >
               Download CV
@@ -55,11 +55,7 @@ const Home: NextPage = () => {
               title="Boreal Dental Clinic"
               description="Official website for Boreal Dental Clinic. Cali, Colombia. 🇨🇴"
               adi="Next.js | Firebase | NextUI | MaterialUI | Typed.js"
-              image={{
-                src: "/Proyecto1.png",
-                width: 640,
-                height: 540,
-              }}
+              src="/Proyecto1.png"
               alt="Proyecto1"
             />
             <ProjectsCard
@@ -68,11 +64,7 @@ const Home: NextPage = () => {
               title="Sinapsis UAO"
               description="Functional prototype for the Faculty of Entrepreneurship of the Universidad Autónoma de Occidente."
               adi="React.js  | Firebase | Material-UI | Bootstrap"
-              image={{
-                src: "/Proyecto2.png",
-                width: 640,
-                height: 540,
-              }}
+              src="/Proyecto2.png"
               alt="Proyecto2"
             />
             <ProjectsCard
@@ -81,11 +73,7 @@ const Home: NextPage = () => {
               title="Parqueventos"
               description="Functional prototype that allows the registration and visualization of the different events available in the city of Cali, Colombia. (Optimized web view only)."
               adi="Next.js | Firebase | NextUI | Material-UI | Mapbox | React Hot Toast"
-              image={{
-                src: "/Proyecto3.png",
-                width: 640,
-                height: 540,
-              }}
+              src="/Proyecto3.png"
               alt="Proyecto3"
             />
             <ProjectsCard
@@ -94,11 +82,7 @@ const Home: NextPage = () => {
               title="Simon Says Game"
               description="This is an implementation of the famous color sequence memory game called Simon Says."
               adi="HTML | CSS | JavaScript"
-              image={{
-                src: "/Proyecto4.png",
-                width: 640,
-                height: 540,
-              }}
+              src="/Proyecto4.png"
               alt="Proyecto4"
             />
             <a

@@ -11,8 +11,8 @@ type ProjectsCardProps = {
   linkGithub?: string;
   title: string;
   description: string;
+  src: string;
   adi?: string;
-  image: StaticImageData;
   alt: string;
 };
 
@@ -22,7 +22,7 @@ function ProjectsCard({
   title,
   description,
   adi,
-  image,
+  src,
   alt,
 }: ProjectsCardProps) {
   return (
@@ -61,13 +61,7 @@ function ProjectsCard({
         )}
       </div>
       <div className={s.projectsSection__container__image}>
-        <Image
-          src={image}
-          alt={alt}
-          width={image.width}
-          height={image.height}
-          priority
-        />
+        <Image src={src} alt={alt} width={640} height={540} priority />
       </div>
     </div>
   );
