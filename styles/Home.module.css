@@ -94,9 +94,13 @@
   margin: auto;
   cursor: pointer;
   gap: 1rem;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   -webkit-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
+}
+
+.final_button {
+  margin-bottom: 5rem;
 }
 
 .projectsSection__container__details__button:hover {

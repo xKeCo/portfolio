@@ -6,10 +6,10 @@ import s from "./styles/Nav.module.css";
 
 // Images and Svgs
 import logo from "/public/1.png";
-import twitter from "../public/twitter.svg";
-import github from "../public/github.svg";
-import instagram from "../public/instagram.svg";
-import linkedin from "../public/linkedin.svg";
+import twitter from "../public/imgSocialLinks/twitter.svg";
+import github from "../public/imgSocialLinks/github.svg";
+import instagram from "../public/imgSocialLinks/instagram.svg";
+import linkedin from "../public/imgSocialLinks/linkedin.svg";
 
 function Nav() {
   return (

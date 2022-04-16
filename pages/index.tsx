@@ -51,21 +51,20 @@ const Home: NextPage = () => {
           <div id="projects" />
           <section className={s.projectsSection}>
             <ProjectsCard
+              linkPage="https://fitjoe.vercel.app/"
+              title="FitJoe Clothing"
+              description="Official Product Portfolio Concept for Fitjoe Clothing."
+              adi="Next.js | TypeScript | GraphCMS | GraphQL | NextUI "
+              src="/imgProjects/fitjoe.png"
+              alt="fitjoe-image"
+            />
+            <ProjectsCard
               linkPage="https://www.borealclinicadental.com"
               title="Boreal Dental Clinic"
               description="Official website for Boreal Dental Clinic. Cali, Colombia. 🇨🇴"
               adi="Next.js | Firebase | NextUI | MaterialUI | Typed.js"
-              src="/Proyecto1.png"
-              alt="Proyecto1"
-            />
-            <ProjectsCard
-              linkPage="https://sinapsis-uao.vercel.app/"
-              linkGithub="https://www.github.com/xKeCo/sinapsis-uao"
-              title="Sinapsis UAO"
-              description="Functional prototype for the Faculty of Entrepreneurship of the Universidad Autónoma de Occidente."
-              adi="React.js  | Firebase | Material-UI | Bootstrap"
-              src="/Proyecto2.png"
-              alt="Proyecto2"
+              src="/imgProjects/boreal.png"
+              alt="Boreal-image"
             />
             <ProjectsCard
               linkPage="https://interactive-map-eight.vercel.app/"
@@ -73,8 +72,17 @@ const Home: NextPage = () => {
               title="Parqueventos"
               description="Functional prototype that allows the registration and visualization of the different events available in the city of Cali, Colombia. (Optimized web view only)."
               adi="Next.js | Firebase | NextUI | Material-UI | Mapbox | React Hot Toast"
-              src="/Proyecto3.png"
-              alt="Proyecto3"
+              src="/imgProjects/map.png"
+              alt="interactiveMap-image"
+            />
+            <ProjectsCard
+              linkPage="https://sinapsis-uao.vercel.app/"
+              linkGithub="https://www.github.com/xKeCo/sinapsis-uao"
+              title="Sinapsis UAO"
+              description="Functional prototype for the Faculty of Entrepreneurship of the Universidad Autónoma de Occidente."
+              adi="React.js  | Firebase | Material-UI | Bootstrap"
+              src="/imgProjects/sinapsis.png"
+              alt="sinapsis-image"
             />
             <ProjectsCard
               linkPage="https://simon-says-eta.vercel.app/"
@@ -82,8 +90,8 @@ const Home: NextPage = () => {
               title="Simon Says Game"
               description="This is an implementation of the famous color sequence memory game called Simon Says."
               adi="HTML | CSS | JavaScript"
-              src="/Proyecto4.png"
-              alt="Proyecto4"
+              src="/imgProjects/simonsays.png"
+              alt="simonsays-image"
             />
             <a
               href="https://www.github.com/xKeCo/"
@@ -99,6 +107,18 @@ const Home: NextPage = () => {
                 <Image src={more} width={20} height={20} alt="Arrow" />
               </div>
             </a>
+            <Link href="/about">
+              <div
+                className={`${s.projectsSection__container__details__button} ${s.final_button}`}
+              >
+                <div
+                  className={s.projectsSection__container__details__button_text}
+                >
+                  About me
+                </div>
+                <Image src={more} width={20} height={20} alt="Arrow" />
+              </div>
+            </Link>
           </section>
         </main>
       </div>

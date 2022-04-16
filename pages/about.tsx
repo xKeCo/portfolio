@@ -4,9 +4,9 @@ import Image from "next/image";
 import Nav from "components/Nav";
 
 // Images
-import Imagen from "../public/fotoPerfil1.png";
-import Imagen2 from "../public/fotoPerfil3.png";
-import Imagen3 from "../public/fotoPerfil2.jpeg";
+import Imagen from "../public/imgAboutMe/fotoPerfil1.png";
+import Imagen2 from "../public/imgAboutMe/fotoPerfil3.png";
+import Imagen3 from "../public/imgAboutMe/fotoPerfil2.jpeg";
 
 // Styles
 import s from "../styles/About.module.css";
