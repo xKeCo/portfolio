@@ -107,7 +107,7 @@ const Home: NextPage = () => {
                 <Image src={more} width={20} height={20} alt="Arrow" />
               </div>
             </a>
-            <Link href="/about">
+            <Link href="/about" passHref>
               <div
                 className={`${s.projectsSection__container__details__button} ${s.final_button}`}
               >
