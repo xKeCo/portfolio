@@ -20,14 +20,9 @@ const Home: NextPage = () => {
         <main className={s.main}>
           <section className={s.hero}>
             <div className={s.hero__intro}>
-              <h1 className={s.hero__intro__h1}>
-                I&apos;m{" "}
-                <Link href="/about" passHref>
-                  <span className={s.hero__intro__line__through}>
-                    Kevin Collazos
-                  </span>
-                </Link>
-              </h1>
+              <Link href="/about" passHref>
+                <h1 className={s.hero__intro__h1}>Kevin Collazos</h1>
+              </Link>
               <a
                 href="https://drive.google.com/u/0/uc?id=1RM6pUAdYK_JnnjToKWvM_weWYhZbr9XO&export=download"
                 download="Resume"
@@ -50,7 +45,7 @@ const Home: NextPage = () => {
           </section>
           <div id="projects" />
           <section className={s.projectsSection}>
-            <p className={s.projectsSection__title}>01 - Not my Projects</p>
+            <p className={s.projectsSection__title}>01 - Projects</p>
             <ProjectsCard
               linkPage="https://fitjoe.vercel.app/"
               title="FitJoe Clothing"
@@ -85,41 +80,35 @@ const Home: NextPage = () => {
               src="/imgProjects/sinapsis.png"
               alt="sinapsis-image"
             />
-            <ProjectsCard
-              linkPage="https://simon-says-eta.vercel.app/"
-              linkGithub="https://github.com/xKeCo/Simon-Says-Game"
-              title="Simon Says Game"
-              description="This is an implementation of the famous color sequence memory game called Simon Says."
-              adi="HTML | CSS | JavaScript"
-              src="/imgProjects/simonsays.png"
-              alt="simonsays-image"
-            />
-            <a
-              href="https://www.github.com/xKeCo/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className={s.projectsSection__container__details__button}>
-                <div
-                  className={s.projectsSection__container__details__button_text}
-                >
-                  More Projects
-                </div>
-                <Image src={more} width={20} height={20} alt="Arrow" />
+          </section>
+          <p className={s.aboutMe__title}>02 - About me</p>
+          <section className={s.aboutMe}>
+            <div className={s.aboutMe__hobbies__title}>
+              <h1 className={s.aboutMe__h1}>CrossFit,</h1>
+              <h1 className={s.aboutMe__h1}>Gaming,</h1>
+              <h1 className={s.aboutMe__h1}>Music.</h1>
+            </div>
+
+            <div className={s.aboutMe__hobbies__details}>
+              <p className={s.aboutMe__hobbies__details__text}>
+                My hobbies take up a good portion of my leisure time. I'm either
+                cheering up FC Bayern Munich, winning a game of FIFA with them,
+                exploring VR experiences or listening to delightful music.
+              </p>
+              <div className={s.aboutMe__hobbies__details__line}>
+                <Link href="/about">
+                  <p className={s.aboutMe__hobbies__details__link}>
+                    More about me
+                  </p>
+                </Link>
               </div>
-            </a>
-            <Link href="/about" passHref>
-              <div
-                className={`${s.projectsSection__container__details__button} ${s.final_button}`}
-              >
-                <div
-                  className={s.projectsSection__container__details__button_text}
-                >
-                  About me
-                </div>
-                <Image src={more} width={20} height={20} alt="Arrow" />
-              </div>
-            </Link>
+              {/* <Link href="/about" passHref>
+                  <div className={`${s.custom__button}`}>
+                    <div className={s.custom__button_text}>More about me</div>
+                    <Image src={more} width={20} height={20} alt="Arrow" />
+                  </div>
+                </Link> */}
+            </div>
           </section>
         </main>
       </div>
