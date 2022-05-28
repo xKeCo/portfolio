@@ -91,9 +91,9 @@ const Home: NextPage = () => {
 
             <div className={s.aboutMe__hobbies__details}>
               <p className={s.aboutMe__hobbies__details__text}>
-                My hobbies take up a good portion of my leisure time. I'm either
-                cheering up FC Bayern Munich, winning a game of FIFA with them,
-                exploring VR experiences or listening to delightful music.
+                My hobbies take up a good portion of my leisure time. I&apos;m
+                either cheering up FC Bayern Munich, winning a game of FIFA with
+                them, exploring VR experiences or listening to delightful music.
               </p>
               <div className={s.aboutMe__hobbies__details__line}>
                 <Link href="/about">
