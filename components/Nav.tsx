@@ -21,7 +21,7 @@ function Nav() {
           </div>
         </Link>
         <div className={s.navcontainer__social}>
-          <Link href="https://twitter.com/KevinCollazos_">
+          <Link href="https://twitter.com/kcollazos_">
             <a className={s.navcontainer__social__links} target="_blank">
               <Image src={twitter} width={30} height={30} alt="Twitter" />
             </a>

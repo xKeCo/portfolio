@@ -1,12 +1,11 @@
 .projectsSection__container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   overflow: hidden;
   width: 100%;
-  max-width: 900px;
   height: 440px;
   align-items: center;
-  margin: 6rem auto;
+  margin: 4rem auto;
   padding-left: 56px;
   gap: 1rem;
   background-color: #eceff1;
@@ -63,7 +62,7 @@
 }
 
 .projectsSection__container__image {
-  padding-top: 46px;
+  padding-top: 85px;
 }
 
 @media screen and (max-width: 991px) {

@@ -18,38 +18,37 @@ const Home: NextPage = () => {
       <Nav />
       <div className={s.container}>
         <main className={s.main}>
-          <section className={s.intro}>
-            <Link href="/about" passHref>
-              <h1 className={s.intro__h1}>
-                Hi, I&apos;m {""}
-                <span className={s.intro__line__through}>Kevin Collazos</span>,
+          <section className={s.hero}>
+            <div className={s.hero__intro}>
+              <h1 className={s.hero__intro__h1}>
+                I&apos;m{" "}
+                <Link href="/about">
+                  <span className={s.hero__intro__line__through}>
+                    Kevin Collazos
+                  </span>
+                </Link>
               </h1>
-            </Link>
-            <h1 className={s.intro__h1}>
-              a.k.a{" "}
               <a
-                href="https://www.github.com/xKeCo"
+                href="https://drive.google.com/u/0/uc?id=1RM6pUAdYK_JnnjToKWvM_weWYhZbr9XO&export=download"
+                download="Resume"
                 target="_blank"
                 rel="noopener noreferrer"
+                className={s.hero__intro__button__resume}
               >
-                <b>xKeCo</b>.
+                Download CV
               </a>
-            </h1>
-            <h2 className={s.intro__h3}>
-              I&apos;m a <b>Frontend Developer</b>
-            </h2>
-            <a
-              href="https://drive.google.com/u/0/uc?id=1RM6pUAdYK_JnnjToKWvM_weWYhZbr9XO&export=download"
-              download="Resume"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={s.intro__button__resume}
-            >
-              Download CV
-            </a>
+            </div>
+            <div className={s.hero__intro__image}>
+              <img src="/Rectangle.png" alt="" width="100%" />
+            </div>
+            <div className={s.hero__intro__dev}>
+              <img src="/arrow.svg" alt="arrow" width="88px" />
+              <h1 className={s.hero__intro__dev__h1}>Frontend Developer</h1>
+            </div>
           </section>
           <div id="projects" />
           <section className={s.projectsSection}>
+            <p className={s.projectsSection__title}>01 - Not my Projects</p>
             <ProjectsCard
               linkPage="https://fitjoe.vercel.app/"
               title="FitJoe Clothing"
