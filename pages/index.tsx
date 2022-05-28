@@ -22,7 +22,7 @@ const Home: NextPage = () => {
             <div className={s.hero__intro}>
               <h1 className={s.hero__intro__h1}>
                 I&apos;m{" "}
-                <Link href="/about">
+                <Link href="/about" passHref>
                   <span className={s.hero__intro__line__through}>
                     Kevin Collazos
                   </span>
@@ -42,7 +42,9 @@ const Home: NextPage = () => {
               <img src="/Rectangle.png" alt="" width="100%" />
             </div>
             <div className={s.hero__intro__dev}>
-              <img src="/arrow.svg" alt="arrow" width="88px" />
+              <div className={s.hero__intro__dev__imageContainer}>
+                <img src="/arrow.svg" alt="arrow" width="100%" />
+              </div>
               <h1 className={s.hero__intro__dev__h1}>Frontend Developer</h1>
             </div>
           </section>

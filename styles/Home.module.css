@@ -64,6 +64,12 @@
   animation: fadein 2s;
 }
 
+.hero__intro__dev__imageContainer {
+  width: 100%;
+  max-width: 70px;
+  max-height: 70px;
+}
+
 .hero__intro__line__through {
   /* text-decoration: line-through; */
   font-weight: 600;
@@ -99,6 +105,7 @@
 }
 
 .projectsSection {
+  margin-top: 4rem;
   padding: 0 2rem;
 }
 .projectsSection__title {
@@ -151,11 +158,11 @@
   }
 }
 
-@media screen and (max-width: 514px) {
+/* @media screen and (max-width: 514px) {
   .hero__intro {
     flex-wrap: wrap;
   }
-}
+} */
 @media screen and (max-width: 674px) {
   .projectsSection {
     padding: 0;
@@ -163,18 +170,22 @@
 }
 @media (max-width: 600px) {
   .hero__intro__h1 {
-    font-size: 4.5em;
+    font-size: 3rem;
   }
   .hero__intro__dev__h1 {
-    font-size: 4.5em;
+    font-size: 3rem;
   }
 }
 
 @media (max-width: 370px) {
   .hero__intro__h1 {
-    font-size: 3.5em;
+    font-size: 2rem;
   }
   .hero__intro__dev__h1 {
-    font-size: 3em;
+    font-size: 2rem;
+  }
+  .hero__intro__dev__imageContainer {
+    max-width: 60px;
+    max-height: 60px;
   }
 }
