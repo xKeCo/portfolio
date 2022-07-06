@@ -15,13 +15,13 @@ function Nav() {
   return (
     <header className={s.header}>
       <div className={s.navcontainer}>
-        <Link href="/" passHref>
+        {/* <Link href="/" passHref>
           <div className={s.navcontainer__logo}>
             <Image src={logo} width={35} height={45} alt="Logo" />
           </div>
-        </Link>
+        </Link> */}
         <div className={s.navcontainer__social}>
-          <Link href="https://twitter.com/kcollazos_">
+          {/* <Link href="https://twitter.com/kcollazos_">
             <a className={s.navcontainer__social__links} target="_blank">
               <Image src={twitter} width={30} height={30} alt="Twitter" />
             </a>
@@ -40,11 +40,26 @@ function Nav() {
             <a className={s.navcontainer__social__links} target="_blank">
               <Image src={linkedin} width={30} height={30} alt="Instagram" />
             </a>
+          </Link> */}
+          <Link href="/">
+            <p>Code by Kev</p>
           </Link>
         </div>
         <div className={s.navcontainer__projects__link}>
           <Link href="/#projects" passHref>
-            <p>Projects</p>
+            <div className={s.nav__item}>
+              <p>Projects</p>
+            </div>
+          </Link>
+          <Link href="/about" passHref>
+            <div className={s.nav__item}>
+              <p>About</p>
+            </div>
+          </Link>
+          <Link href="/" passHref>
+            <div className={s.nav__item}>
+              <p>Contact</p>
+            </div>
           </Link>
         </div>
       </div>

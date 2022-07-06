@@ -13,7 +13,7 @@
   justify-content: space-between;
   margin: auto;
   max-width: 1500px;
-  padding: 12px 2rem;
+  padding: 12px 4.5rem;
 }
 .navcontainer__logo {
   width: 100%;
@@ -21,6 +21,13 @@
   text-align: center;
   cursor: pointer;
 }
+
+.navcontainer__social p {
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
 .navcontainer__social__links {
   margin-right: 10px;
   border-bottom: 1px solid transparent;
@@ -36,19 +43,45 @@
 
 .navcontainer__projects__link {
   color: #000;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
   font-size: 1.1rem;
   font-weight: 600;
   margin: 0;
   transition: all 0.3s ease;
 }
 
-.navcontainer__projects__link p {
-  border-bottom: 1px solid transparent;
-  transition: all 0.3s ease;
+.nav__item p {
+  font-weight: 500;
+  margin: 0;
+  padding: 0.4rem 0;
+  transition: all 200ms ease-out;
 }
-.navcontainer__projects__link p:hover {
+
+.nav__item {
   cursor: pointer;
-  border-bottom: 1px solid #000;
+  display: inline-block;
+  position: relative;
+  transition: all 200ms ease-out;
+}
+
+.nav__item p:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav__item p:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 @media screen and (max-width: 600px) {

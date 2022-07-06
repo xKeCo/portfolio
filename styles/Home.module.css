@@ -253,12 +253,11 @@
     max-width: 80%;
   }
 }
-@media screen and (max-width: 674px) {
+
+@media (max-width: 674px) {
   .projectsSection {
     padding: 0;
   }
-}
-@media (max-width: 674px) {
   .hero__intro__h1 {
     font-size: 3rem;
     letter-spacing: -2px;

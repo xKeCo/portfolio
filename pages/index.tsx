@@ -11,6 +11,7 @@ import more from "/public/more.png";
 // Styles
 import s from "../styles/Home.module.css";
 import Link from "next/link";
+import Footer from "components/Footer/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -23,15 +24,6 @@ const Home: NextPage = () => {
               <Link href="/about" passHref>
                 <h1 className={s.hero__intro__h1}>Kevin Collazos</h1>
               </Link>
-              <a
-                href="https://drive.google.com/u/0/uc?id=1RM6pUAdYK_JnnjToKWvM_weWYhZbr9XO&export=download"
-                download="Resume"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={s.hero__intro__button__resume}
-              >
-                Download CV
-              </a>
             </div>
             <div className={s.hero__intro__image}>
               {/* <img src="/foto.png" alt="" width="100%" /> */}
@@ -44,6 +36,7 @@ const Home: NextPage = () => {
             </div>
           </section>
           <div id="projects" />
+
           <section className={s.projectsSection}>
             <p className={s.projectsSection__title}>01 - Projects</p>
             <ProjectsCard
@@ -81,7 +74,9 @@ const Home: NextPage = () => {
               alt="sinapsis-image"
             />
           </section>
+
           <p className={s.aboutMe__title}>02 - A Lil bit About me</p>
+
           <section className={s.aboutMe}>
             <div className={s.aboutMe__hobbies__title}>
               <h1 className={s.aboutMe__h1}>CrossFit,</h1>
@@ -104,15 +99,16 @@ const Home: NextPage = () => {
                 </Link>
               </div>
               {/* <Link href="/about" passHref>
-                  <div className={`${s.custom__button}`}>
-                    <div className={s.custom__button_text}>More about me</div>
-                    <Image src={more} width={20} height={20} alt="Arrow" />
-                  </div>
-                </Link> */}
+                <div className={`${s.custom__button}`}>
+                  <div className={s.custom__button_text}>More about me</div>
+                  <Image src={more} width={20} height={20} alt="Arrow" />
+                </div>
+              </Link> */}
             </div>
           </section>
         </main>
       </div>
+      <Footer />
     </>
   );
 };
