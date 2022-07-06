@@ -5,7 +5,7 @@ function Footer() {
     <>
       <footer className={s.footer}>
         <div className={s.contact__container}>
-          <h1 className={s.contact__title}>Let's work together</h1>
+          <h1 className={s.contact__title}>Let&apos;s work together</h1>
 
           <hr />
           <div className={s.contact}>
