@@ -2,8 +2,8 @@ import type { NextPage } from "next";
 import Image from "next/image";
 
 // Local Components
-import Nav from "components/Nav";
-import ProjectsCard from "components/ProjectsCard";
+import Nav from "components/Nav/Nav";
+import ProjectsCard from "components/ProjectsCard/ProjectsCard";
 
 // Button Arrow Image
 import more from "/public/more.png";
@@ -34,7 +34,7 @@ const Home: NextPage = () => {
               </a>
             </div>
             <div className={s.hero__intro__image}>
-              <img src="/Rectangle.png" alt="" width="100%" />
+              {/* <img src="/foto.png" alt="" width="100%" /> */}
             </div>
             <div className={s.hero__intro__dev}>
               <div className={s.hero__intro__dev__imageContainer}>
@@ -81,7 +81,7 @@ const Home: NextPage = () => {
               alt="sinapsis-image"
             />
           </section>
-          <p className={s.aboutMe__title}>02 - About me</p>
+          <p className={s.aboutMe__title}>02 - A Lil bit About me</p>
           <section className={s.aboutMe}>
             <div className={s.aboutMe__hobbies__title}>
               <h1 className={s.aboutMe__h1}>CrossFit,</h1>
@@ -91,12 +91,13 @@ const Home: NextPage = () => {
 
             <div className={s.aboutMe__hobbies__details}>
               <p className={s.aboutMe__hobbies__details__text}>
-                My hobbies take up a good portion of my leisure time. I&apos;m
-                either cheering up FC Bayern Munich, winning a game of FIFA with
-                them, exploring VR experiences or listening to delightful music.
+                I currently reside in Cali, Colombia. My hobbies occupy a good
+                part of my leisure time, especially training sports such as
+                swimming and CrossFit. I also play games like Call of Duty,
+                League of Legends and FIFA.
               </p>
               <div className={s.aboutMe__hobbies__details__line}>
-                <Link href="/about">
+                <Link href="/about" passHref>
                   <p className={s.aboutMe__hobbies__details__link}>
                     More about me
                   </p>

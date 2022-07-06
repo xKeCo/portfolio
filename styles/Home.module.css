@@ -1,9 +1,11 @@
 .main {
   padding: 0 4.5rem;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 .hero {
-  height: 80vh;
+  height: 105vh;
   display: flex;
   flex-direction: column;
   animation: fadein 2s;
@@ -12,7 +14,7 @@
 }
 .hero__intro {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   justify-content: space-between;
   gap: 1rem;
   animation: fadein 2s;
@@ -21,6 +23,7 @@
 .hero__intro__h1 {
   font-size: 7.75rem;
   font-weight: 600;
+  letter-spacing: -5px;
   margin: 0;
   display: inline-block;
   position: relative;
@@ -45,9 +48,15 @@
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+.hero__intro__image {
+  padding: 7rem;
+  background-color: #000;
+}
 .hero__intro__dev__h1 {
   font-size: 7.75rem;
   font-weight: 600;
+  letter-spacing: -5px;
   margin: 0;
   text-align: end;
   transition: all 200ms ease-out;
@@ -252,9 +261,11 @@
 @media (max-width: 674px) {
   .hero__intro__h1 {
     font-size: 3rem;
+    letter-spacing: -2px;
   }
   .hero__intro__dev__h1 {
     font-size: 3rem;
+    letter-spacing: -2px;
   }
   .aboutMe__hobbies__details {
     max-width: 100%;

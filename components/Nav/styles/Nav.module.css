@@ -2,7 +2,8 @@
   background-color: rgb(246, 246, 246, 0.5);
   backdrop-filter: blur(8px);
   max-width: 100%;
-  position: sticky;
+  width: 100%;
+  position: fixed;
   top: 0;
   z-index: 1;
 }
@@ -11,8 +12,8 @@
   display: flex;
   justify-content: space-between;
   margin: auto;
-  max-width: 1200px;
-  padding: 20px 2rem;
+  max-width: 1500px;
+  padding: 12px 2rem;
 }
 .navcontainer__logo {
   width: 100%;

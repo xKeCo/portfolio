@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 // Local Components
-import Nav from "components/Nav";
+import Nav from "components/Nav/Nav";
 
 // Images
 import Imagen from "../public/imgAboutMe/fotoPerfil1.png";
