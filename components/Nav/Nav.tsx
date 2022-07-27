@@ -15,32 +15,7 @@ function Nav() {
   return (
     <header className={s.header}>
       <div className={s.navcontainer}>
-        {/* <Link href="/" passHref>
-          <div className={s.navcontainer__logo}>
-            <Image src={logo} width={35} height={45} alt="Logo" />
-          </div>
-        </Link> */}
-        <div className={s.navcontainer__social}>
-          {/* <Link href="https://twitter.com/kcollazos_">
-            <a className={s.navcontainer__social__links} target="_blank">
-              <Image src={twitter} width={30} height={30} alt="Twitter" />
-            </a>
-          </Link>
-          <Link href="https://github.com/xKeCo">
-            <a className={s.navcontainer__social__links} target="_blank">
-              <Image src={github} width={30} height={30} alt="Github" />
-            </a>
-          </Link>
-          <Link href="https://instagram.com/kcollazos_">
-            <a className={s.navcontainer__social__links} target="_blank">
-              <Image src={instagram} width={30} height={30} alt="Instagram" />
-            </a>
-          </Link>
-          <Link href="https://www.linkedin.com/in/kevcollazos/">
-            <a className={s.navcontainer__social__links} target="_blank">
-              <Image src={linkedin} width={30} height={30} alt="Instagram" />
-            </a>
-          </Link> */}
+        <div className={s.navcontainer__code}>
           <Link href="/">
             <p>Code by Kev</p>
           </Link>
