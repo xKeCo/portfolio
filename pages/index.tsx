@@ -22,7 +22,7 @@ const Home: NextPage = () => {
           <section className={s.hero}>
             <div className={s.hero__intro}>
               <Link href="/about" passHref>
-                <h1 className={s.hero__intro__h1}>XXXXXX</h1>
+                <h1 className={s.hero__intro__h1}>Kevin Collazos</h1>
               </Link>
             </div>
             <div className={s.hero__intro__image}>
@@ -32,7 +32,7 @@ const Home: NextPage = () => {
               <div className={s.hero__intro__dev__imageContainer}>
                 <img src="/arrow.svg" alt="arrow" width="100%" />
               </div>
-              <h1 className={s.hero__intro__dev__h1}>XXXXXX</h1>
+              <h1 className={s.hero__intro__dev__h1}>Frontend Developer</h1>
             </div>
           </section>
           <div id="projects" />
