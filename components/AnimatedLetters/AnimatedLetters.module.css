@@ -1,0 +1,55 @@
+.banner_row {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.row-col {
+  width: 50%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.row_title,
+.row_letter {
+  font-size: 7.75rem;
+  font-weight: 600;
+  letter-spacing: -5px;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1250px) {
+  .row_title,
+  .row_letter {
+    font-size: 6.5rem;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .row_title,
+  .row_letter {
+    font-size: 5.5rem;
+  }
+}
+@media screen and (max-width: 825px) {
+  .row_title,
+  .row_letter {
+    font-size: 4.5rem;
+    letter-spacing: -3px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .row_title,
+  .row_letter {
+    font-size: 3.5rem;
+    letter-spacing: -3px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .row_title,
+  .row_letter {
+    font-size: 3rem;
+    letter-spacing: -2px;
+  }
+}

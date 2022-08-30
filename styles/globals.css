@@ -18,3 +18,8 @@ a {
 * {
   box-sizing: border-box;
 }
+
+*::selection {
+  background: #b05acf;
+  color: #fff;
+}

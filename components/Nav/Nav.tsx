@@ -1,15 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
 
 // Styles
 import s from "./styles/Nav.module.css";
-
-// Images and Svgs
-import logo from "/public/1.png";
-import twitter from "../../public/imgSocialLinks/twitter.svg";
-import github from "../../public/imgSocialLinks/github.svg";
-import instagram from "../../public/imgSocialLinks/instagram.svg";
-import linkedin from "../../public/imgSocialLinks/linkedin.svg";
 
 function Nav() {
   return (
@@ -26,12 +18,12 @@ function Nav() {
               <p>Projects</p>
             </div>
           </Link>
-          <Link href="/about" passHref>
+          <Link href="/about2" passHref>
             <div className={s.nav__item}>
               <p>About</p>
             </div>
           </Link>
-          <Link href="/" passHref>
+          <Link href="/#contact" passHref>
             <div className={s.nav__item}>
               <p>Contact</p>
             </div>

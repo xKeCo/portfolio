@@ -120,6 +120,7 @@
   font-weight: 500;
   margin: 0;
   animation: fadein 2s;
+  margin-bottom: 3rem;
   transition: all 200ms ease-out;
 }
 
@@ -152,6 +153,31 @@
 }
 
 .custom__button_text {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.projectsSection__container__details__button {
+  display: flex;
+  margin-top: 1rem;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border: 2px solid #222831;
+  background-color: #222831;
+  color: #fff;
+  gap: 1rem;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+
+.projectsSection__container__details__button:hover {
+  background-color: #3a4553;
+  cursor: pointer;
+}
+
+.projectsSection__container__details__button_text {
   font-size: 16px;
   font-weight: 400;
 }
@@ -271,6 +297,9 @@
   }
   .aboutMe__h1 {
     font-size: 5.5rem;
+  }
+  .projectsSection__container__details__button {
+    padding: 12px 16px;
   }
 }
 

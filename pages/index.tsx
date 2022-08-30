@@ -1,9 +1,13 @@
 import type { NextPage } from "next";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 
 // Local Components
 import Nav from "components/Nav/Nav";
 import ProjectsCard from "components/ProjectsCard/ProjectsCard";
+
+// Framer Motion
+import { motion, useInView } from "framer-motion";
 
 // Button Arrow Image
 import more from "/public/more.png";
@@ -12,8 +16,21 @@ import more from "/public/more.png";
 import s from "../styles/Home.module.css";
 import Link from "next/link";
 import Footer from "components/Footer/Footer";
+import AnimatedLetters from "components/AnimatedLetters/AnimatedLetters";
 
 const Home: NextPage = () => {
+  const homeVariant = {
+    hidden: { opacity: 0, y: 35, transition: { duration: 0 } },
+    visible: { opacity: 1, y: 0 },
+  };
+
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  useEffect(() => {
+    console.log("Element is in view: ", isInView);
+  }, [isInView]);
+
   return (
     <>
       <Nav />
@@ -21,24 +38,33 @@ const Home: NextPage = () => {
         <main className={s.main}>
           <section className={s.hero}>
             <div className={s.hero__intro}>
-              <Link href="/about" passHref>
-                <h1 className={s.hero__intro__h1}>Kevin Collazos</h1>
-              </Link>
+              <AnimatedLetters title="Kevin&nbsp;Collazos" />
+              {/* <img
+                className={s.image__hero}
+                src="/feliz.svg"
+                alt="feliz"
+                width="200px"
+                height="250px"
+              /> */}
             </div>
-            <div className={s.hero__intro__image}>
-              {/* <img src="/foto.png" alt="" width="100%" /> */}
-            </div>
-            <div className={s.hero__intro__dev}>
-              <div className={s.hero__intro__dev__imageContainer}>
-                <img src="/arrow.svg" alt="arrow" width="100%" />
-              </div>
-              <h1 className={s.hero__intro__dev__h1}>Frontend Developer</h1>
-            </div>
+            <div className={s.hero__intro__dev}></div>
+            <AnimatedLetters title="Frontend&nbsp;Developer" />
+            <motion.div
+              initial={{ opacity: 0, y: 35 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                ease: "easeInOut",
+                duration: 1,
+                delay: 0.4,
+              }}
+              className="row-col"
+            ></motion.div>
           </section>
           <div id="projects" />
 
           <section className={s.projectsSection}>
             <p className={s.projectsSection__title}>01 - Projects</p>
+
             <ProjectsCard
               linkPage="https://fitjoe.vercel.app/"
               title="FitJoe Clothing"
@@ -73,38 +99,57 @@ const Home: NextPage = () => {
               src="/imgProjects/sinapsis.png"
               alt="sinapsis-image"
             />
+            <a
+              href="https://github.com/xkeco/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className={s.projectsSection__container__details__button}>
+                <div
+                  className={s.projectsSection__container__details__button_text}
+                >
+                  More Projects ...
+                </div>
+                {/* <Image src={more} width={20} height={20} alt="Arrow" priority /> */}
+              </div>
+            </a>
           </section>
 
           <p className={s.aboutMe__title}>02 - A Lil bit About me</p>
 
           <section className={s.aboutMe}>
             <div className={s.aboutMe__hobbies__title}>
-              <h1 className={s.aboutMe__h1}>CrossFit,</h1>
-              <h1 className={s.aboutMe__h1}>Gaming,</h1>
-              <h1 className={s.aboutMe__h1}>Music.</h1>
+              <AnimatedLetters title="CrossFit," />
+              <AnimatedLetters title="Gaming," />
+              <AnimatedLetters title="Music." />
             </div>
 
-            <div className={s.aboutMe__hobbies__details}>
+            <motion.div
+              variants={homeVariant}
+              initial="hidden"
+              animate={isInView ? "visible" : "hidden"}
+              transition={{
+                ease: "easeInOut",
+                duration: 1,
+                delay: 0.4,
+              }}
+              ref={ref}
+              className={s.aboutMe__hobbies__details}
+            >
               <p className={s.aboutMe__hobbies__details__text}>
                 I currently reside in Cali, Colombia. My hobbies occupy a good
                 part of my leisure time, especially training sports such as
                 swimming and CrossFit. I also play games like Call of Duty,
-                League of Legends and FIFA.
+                Valorant, League of Legends and FIFA.
               </p>
               <div className={s.aboutMe__hobbies__details__line}>
-                <Link href="/about" passHref>
+                <Link href="/about2" passHref>
                   <p className={s.aboutMe__hobbies__details__link}>
                     More about me
                   </p>
                 </Link>
               </div>
-              {/* <Link href="/about" passHref>
-                <div className={`${s.custom__button}`}>
-                  <div className={s.custom__button_text}>More about me</div>
-                  <Image src={more} width={20} height={20} alt="Arrow" />
-                </div>
-              </Link> */}
-            </div>
+            </motion.div>
           </section>
         </main>
       </div>

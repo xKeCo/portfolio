@@ -3,7 +3,7 @@ import s from "./styles/Footer.module.css";
 function Footer() {
   return (
     <>
-      <footer className={s.footer}>
+      <footer className={s.footer} id="contact">
         <div className={s.contact__container}>
           <h1 className={s.contact__title}>Let&apos;s work together</h1>
 
@@ -11,22 +11,46 @@ function Footer() {
           <div className={s.contact}>
             <div className={s.personal}>
               <div className={s.personal__item}>
-                <a>kevcollazos@gmail.com</a>
+                <a
+                  href="mailto:kevcollazos@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  kevcollazos@gmail.com
+                </a>
               </div>
               <div className={s.personal__item}>
-                <a>+1 908 404 8220</a>
+                <a>+57 313 641 5647</a>
               </div>
             </div>
 
             <div className={s.social}>
               <div className={s.social__item}>
-                <a>Twitter</a>
+                <a
+                  href="https://twitter.com/kcollazos_/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Twitter
+                </a>
               </div>
               <div className={s.social__item}>
-                <a>Instagram</a>
+                <a
+                  href="https://www.instagram.com/kcollazos_/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Instagram
+                </a>
               </div>
               <div className={s.social__item}>
-                <a>GitHub</a>
+                <a
+                  href="https://github.com/xkeco/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
               </div>
             </div>
           </div>

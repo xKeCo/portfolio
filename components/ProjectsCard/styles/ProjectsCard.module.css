@@ -106,10 +106,10 @@
 }
 @media screen and (max-width: 479px) {
   .projectsSection__container__details__h2 {
-    font-size: 2.7rem;
+    font-size: 2.2rem;
   }
   .projectsSection__container__details__p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .projectsSection__container__details__button {
