@@ -9,7 +9,7 @@ function Nav() {
       <div className={s.navcontainer}>
         <div className={s.navcontainer__code}>
           <Link href="/">
-            <p>Code by Kev</p>
+            <p className={s.codeBy}>Code by Kevin Collazos</p>
           </Link>
         </div>
         <div className={s.navcontainer__projects__link}>

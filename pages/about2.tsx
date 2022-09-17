@@ -14,8 +14,8 @@ function about() {
       <div className={s.massiveAboutContainer1}>
         <div className={s.aboutContainer1}>
           <h1 className={s.aboutContainer1__title}>
-            Hi again, I&apos;m Kevin Collazos. I am Jr Frontend Developver with
-            a passion for creating beautiful and intuitive experiences. Waiting
+            Hi again, I&apos;m Kevin Collazos. I am Jr Frontend Developer with a
+            passion for creating beautiful and intuitive experiences. Waiting
             for a new challenge.
           </h1>
           <img

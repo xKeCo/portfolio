@@ -22,10 +22,25 @@
   cursor: pointer;
 }
 
-.navcontainer__code p {
+.navcontainer__code {
+  max-width: 121px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.codeBy {
   font-weight: 500;
   font-size: 1.1rem;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.codeBy:hover {
+  /* color: #b05acf; */
+  transform: translateX(-75px);
+  transition: all 0.3s ease;
 }
 
 .navcontainer__code__links {
